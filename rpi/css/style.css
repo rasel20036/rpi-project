@@ -1,0 +1,229 @@
+/* All Common CSS Start  */
+* {
+  margin: 0;
+  padding: 0;
+  outline: 0;
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+}
+
+a,
+a:hover {
+  text-decoration: none;
+  display: inline-block;
+}
+
+ol,
+ul {
+  list-style-type: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p {
+  margin: 0;
+  padding: 0;
+  line-height: 0.8;
+}
+
+/*====================================== All Common CSS End =================================*/
+
+/* Header Part Start  */
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 99999;
+  background: white;
+}
+.navbar-brand picture img{
+  height: 100px;
+  width: 150px;
+}
+/* .sticky_header {
+  animation: sticky 1s;
+  background: white;
+  transition: 0.6s;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.06);
+}
+
+@keyframes sticky {
+  from {
+    top: -35px;
+  }
+
+  to {
+    top: 0px;
+  }
+} */
+
+/* .navbar-expand-lg {
+	flex-wrap: nowrap;
+	justify-content: flex-start;
+} */
+
+.navbar-nav {
+  margin: 0;
+  justify-content: flex-end;
+}
+.navbar-nav .nav-link {
+  font-size: 16px;
+  font-weight: 600;
+  font-family: "Montserrat", sans-serif;
+  color: black;
+  transition: 0.5s;
+  display: inline-block;
+  margin-right: 30px;
+  transition: all 0.4s linear;
+}
+
+.navbar-nav .nav-link:last-child {
+  margin-right: 30px;
+}
+
+.navbar-expand-lg .navbar-nav .nav-link:hover {
+  transform: scale(1.1);
+}
+
+/* nav_btn Start*/
+.nav_btn {
+  padding: 15px 25px;
+  border: 2px solid red;
+  position: relative;
+  overflow: hidden;
+  color: red !important;
+  border-radius: 10px;
+  background: #ffffff !important;
+  z-index: 99999;
+  font-weight: 600;
+}
+
+.nav_btn:hover {
+  color: rgb(255, 255, 255) !important;
+  position: relative;
+  border-color: red;
+  font-weight: 600;
+}
+
+.nav_btn::after {
+  content: "";
+  position: absolute;
+  height: 0px;
+  width: 0px;
+  background: red;
+  border-radius: 50%;
+  transform: translate(-50%, 50%);
+  bottom: 0px;
+  left: 0;
+  transition: 0.6s;
+  border: none;
+  z-index: -1;
+}
+
+.nav_btn:hover:after {
+  height: 300px;
+  width: 450px;
+}
+
+/*============== nav_btn End=======================*/
+
+/* Header Part End */
+
+/* Banner Part Start  */
+#banner {
+  background: url(../images/banner.jpg);
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.banner_overly {
+  position: relative;
+  padding: 150px 0px;
+  background: rgba(0, 0, 0, 0.7);
+}
+
+.banner_img {
+  position: absolute;
+  bottom: 0px;
+}
+
+.banner_img img {
+  width: 500px;
+  height: 600px;
+}
+
+.banner_snd_part {
+  margin-top: 220px;
+}
+
+.banner_snd_part h1 {
+  font-size: 50px;
+  font-weight: 400;
+  font-family: "Roboto", sans-serif;
+  color: red;
+  text-shadow: 0 3px 1px rgba(0, 0, 0, 0.4);
+  filter: dropshadow(color=rgba(0, 0, 0, 0.4), offx=0, offy=3);
+}
+
+.banner_snd_part p {
+  font-size: 16px;
+  font-weight: 400;
+  color: #fff;
+  line-height: 24px;
+  text-shadow: 0 3px 1px rgba(0, 0, 0, 0.4);
+  filter: dropshadow(color=rgba(0, 0, 0, 0.4), offx=0, offy=3);
+  margin-top: 20px;
+  margin-bottom: 30px;
+  font-family: "Montserrat", sans-serif;
+}
+
+.button {
+  display: inline-block;
+  outline: none;
+  cursor: pointer;
+  color: #fff;
+  text-align: center;
+  text-decoration: none;
+  font-size: 18px;
+  padding: 15px 40px;
+  text-shadow: 0 1px 1px rgba(0, 0, 0, 0.3);
+  -webkit-border-radius: 5px;
+  position: relative;
+  z-index: 1;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+  -webkit-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.7);
+  -moz-box-shadow: 0 3px 1px rgba(0, 0, 0, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.7);
+  box-shadow: 0 3px 1px rgba(0, 0, 0, 0.4),
+    inset 0 1px 1px rgba(255, 255, 255, 0.7);
+  background: red;
+  border: 1px solid red;
+  transition: all 0.4s linear;
+}
+
+.button:hover {
+  border-color: #ffffff;
+  background: rgba(0, 0, 0, 0.4);
+  color: #ffff;
+}
+
+#particuler {
+  height: 100%;
+  width: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+}
+
+/*=================== Banner Part End ================*/
